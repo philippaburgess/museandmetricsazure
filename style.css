@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/* Reset Margin and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f1f1f1;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h3 {
+    margin-top: 0.5em;
+    font-weight: normal;
+    color: #666;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 1.75em;
+}
+
+p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+}
+
+a {
+    color: #1c95c5;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+a:hover {
+    color: #003366;
+}
+
+button {
+    background-color: #1c95c5;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #003366;
+}
+/* Stay Connected Section Styles */
+#stay-connected {
+    text-align: center; /* Center align the section content */
+    padding: 2rem; /* Consistent padding all around */
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    margin-bottom: 2rem; /* Space below the section */
+}
+
+#stay-connected h2 {
+    margin-bottom: 1rem; /* Space below the header */
+}
+
+#stay-connected p {
+    margin-bottom: 1rem; /* Space below the paragraph */
+}
+
+/* Social Media Icons and Links */
+#stay-connected .social-icons {
+    display: flex; /* Use flexbox for a horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    gap: 50px; /* Space between the icons */
+    padding: 2rem 0; /* Padding above and below the icons */
+}
+
+#stay-connected .social-icons a {
+    background-color: #1c95c5; /* Brand blue color */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding inside the buttons */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    text-decoration: none; /* Remove underlines from links */
+    font-size: 1rem; /* Font size for the links */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    display: inline-flex; /* Inline flex to align text and icons */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content inside the buttons */
+}
+
+#stay-connected .social-icons a:hover {
+    background-color: #003366; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow for hover effect */
+}
+
+.responsive-img {
+    max-width: 100%; /* This ensures the image is responsive and fits the container */
+    height: auto; /* This keeps the image aspect ratio intact */
+    display: block; /* This makes sure the image is on its own line */
+    margin: 0 auto 20px; /* This centers the image and adds 20px space below it */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #stay-connected .social-icons {
+        flex-direction: column; /* Stack icons vertically on small screens */
+    }
+}
+
+#calendar iframe {
+    width: 100%;
+    height: 600px;
+    border: 0;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #stay-connected ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #calendar iframe {
+        height: auto;
+    }
+}
